@@ -1,0 +1,83 @@
+html {
+  cursor: url('cursor5.png'), auto;
+}
+
+.head2 {   
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+
+body {
+  background-color: #1e1e1e;
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, #2f2f2f 1px, transparent 1px),
+    linear-gradient(to bottom, #2f2f2f 1px, transparent 1px);
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Tektur', cursive;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top: 33%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#textbox{
+
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Tektur', cursive;
+  border: 2px solid #764aff;
+  color: #764aff;
+  background-color: transparent;
+  padding: 13px;
+  margin-top: 20px;
+}
+
+#textbox:hover {
+  background-color:#764aff;
+  color:#1e1e1e;
+  transition-duration: 0.5s;
+}
+
+#octo1{
+  animation: mover .8s step-start infinite;
+}
+
+svg {
+  width: 80vw;
+  max-height: 100vh;
+}
+
+svg path {
+  transition: all 0.5s;
+}
+
+svg:hover path {
+  fill: #64ffa0;
+}
+
+#blinkbar {
+  animation: blinker .8s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+  
+@keyframes mover {
+  50% {
+    d: path("M 711.41 498.04 711.41 578.33 631.71 578.33 631.71 78.43 553.29 0 235.87 0 157.46 78.43 157.46 578.33 78.42 578.33 78.42 491.24 0 491.24 0 569.62 78.42 648.04 236.39 648.04 236.39 721.65 78.62 721.65 78.62 791.37 239.95 791.37 314.61 716.7 314.61 578.59 235.87 578.33 235.87 69.71 553.29 69.71 553.29 578.33 357.2 578.33 356.8 985.58 356.49 985.58 356.49 985.73 276.2 985.58 276.2 1055.29 357.31 1055.29 435.21 977.38 435.21 648.04 476.35 648.04 476.35 835.93 553.47 913.05 712.96 913.05 712.96 843.34 554.77 843.34 552.89 648.04 713.41 648.04 789.83 573.56 789.83 498.04 711.41 498.04 z");
+  }
+}
